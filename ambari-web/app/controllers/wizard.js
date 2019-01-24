@@ -262,7 +262,7 @@ App.WizardController = Em.Controller.extend(App.LocalStorage, App.ThemesMappingM
           App.router.send('gotoStep' + step);
           this.hide();
         },
-        body: "If you proceed to go back to Step " + step + ", you will lose any changes you have made beyond this step"
+        body: "如果您继续返回步骤" + step + ",您将失去在此步骤之后所做的任何更改"
       });
     } else {
       App.router.send('gotoStep' + step);

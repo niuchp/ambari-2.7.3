@@ -40,7 +40,7 @@ Em.I18n.translations = {
     '<br>Perform a hard browser cache refresh, typically \'Ctrl+Shift+R\' (\'Cmd+Shift+R\' on OS X), to see if this message disappears.' +
     '<br>If you keep seeing this message, clear the browser cache completely and hit this URL again.' +
     '<br>You must resolve this error in order to continue.',
-  'app.signout':'Sign out',
+  'app.signout':'Login out',
   'app.settings':'Settings',
   'app.manageAmbari': 'Manage Ambari',
   'app.aboutAmbari':'About',

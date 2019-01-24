@@ -24,8 +24,8 @@ App.SshKeyFileUploader = Em.View.extend({
   //TODO: rewrite it as independent component and place it somewhere in utils
   // alternative is to move it to App.WizardStep2View
   template: Em.Handlebars.compile('<input class="inputfileUgly" type="file" name="file" id="file" {{bindAttr disabled="view.disabled"}} {{QAAttr "upload-ssh-input"}} />' +
-      '<label class="btn btn-default" for="file" {{bindAttr disabled="view.disabled"}}>Choose file</label>' +
-      '<span id="selectedFileName">No file selected</span>'),
+      '<label class="btn btn-default" for="file" {{bindAttr disabled="view.disabled"}}>选择文件</label>' +
+      '<span id="selectedFileName">没有选中文件</span>'),
 
   classNames: ['ssh-key-input-indentation'],
 

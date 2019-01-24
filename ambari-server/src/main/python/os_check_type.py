@@ -1,5 +1,5 @@
 #!/usr/bin/ambari-python-wrap
-
+# -*- coding:utf-8 -*-
 '''
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -25,7 +25,7 @@ def main(argv=None):
   # Same logic that was in "os_type_check.sh"
   if len(sys.argv) != 2:
     print "Usage: <cluster_os>"
-    raise Exception("Error in number of arguments. Usage: <cluster_os>")
+    raise Exception("参数数量错误。用法: <cluster_os>")
     pass
 
   cluster_os = sys.argv[1]
@@ -37,7 +37,7 @@ def main(argv=None):
   if current_os == cluster_os:
     sys.exit(0)
   else:
-    raise Exception("Local OS is not compatible with cluster primary OS family. Please perform manual bootstrap on this host.")
+    raise Exception("本地操作系统与集群主OS系列不兼容。 请在此主机上执行手动引导程序。")
 
 
 if __name__ == "__main__":
