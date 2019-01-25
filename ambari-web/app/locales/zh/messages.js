@@ -24,7 +24,7 @@ Em.I18n.translations = {
   'app.name.subtitle.installer':'集群安装向导',
   'app.reloadPopup.link': '登录页',
   'app.reloadPopup.text': '尝试连接服务器...',
-  'app.reloadPopup.noClusterName.text': '无法检索群集名称，尝试重新加载...',
+  'app.reloadPopup.noClusterName.text': '无法检索集群名称，尝试重新加载...',
   'app.reloadPopup.header': '重新加载页面',
   'app.redirectIssuePopup.header': '登录重定向问题',
   'app.redirectIssuePopup.body': '要进行单点登录，请确保Knox网关和Ambari服务器位于同一主机或子域上。' +
@@ -521,7 +521,7 @@ Em.I18n.translations = {
   'popup.dependent.configs.dependencies.for.groups': '你正在更改默认组，请选择要从其他服务保存相关配置的配置组',
 
   'popup.jdkValidation.header': '不支持的JDK',
-  'popup.jdkValidation.body': '{0}堆栈需要JDK {1},但是将Ambari配置为JDK {2}. 这可能会导致运行群集的错误或问题.',
+  'popup.jdkValidation.body': '{0}堆栈需要JDK {1},但是将Ambari配置为JDK {2}. 这可能会导致运行集群的错误或问题.',
   'popup.logTail.header': '文件名',
   'popup.logTail.openInLogSearch': '打开日志搜索',
 
@@ -614,13 +614,13 @@ Em.I18n.translations = {
   'installer.step0.header':'开始使用',
   'installer.step0.body.header':'开始使用',
   'installer.step0.body':'此向导将引导您完成集群安装过程. 首先,命名您的新集群.',
-  'installer.step0.clusterName':'命名您的群集',
+  'installer.step0.clusterName':'命名您的集群',
   'installer.step0.clusterName.tooltip.title':'集群名称',
   'installer.step0.clusterName.tooltip.content':'输入唯一的集群名称.',
   'installer.step0.clusterName.error.required':'集群名称是必需的',
-  'installer.step0.clusterName.error.tooLong':'群集名称太长',
-  'installer.step0.clusterName.error.whitespace':'群集名称不能包含空格',
-  'installer.step0.clusterName.error.specialChar':'群集名称不能包含特殊字符',
+  'installer.step0.clusterName.error.tooLong':'集群名称太长',
+  'installer.step0.clusterName.error.whitespace':'集群名称不能包含空格',
+  'installer.step0.clusterName.error.specialChar':'集群名称不能包含特殊字符',
 
   'installer.step1.header':'选择版本',
   'installer.step1.body':'选择您的集群的软件版本和交付方式.',
@@ -684,7 +684,7 @@ Em.I18n.translations = {
   'installer.step1.retryRepoUrls': '点击<b>这里</b>重试.',
 
   'installer.step2.header':'安装选项',
-  'installer.step2.body':'输入要包含在群集中的主机列表,并提供您的SSH密钥.',
+  'installer.step2.body':'输入要包含在集群中的主机列表,并提供您的SSH密钥.',
   'installer.step2.targetHosts':'目标主机',
   'installer.step2.targetHosts.info':'使用完全限定域名(FQDN)输入主机列表,每行一个',
   'installer.step2.hostPattern.tooltip.title':'模式表达式',
@@ -715,10 +715,10 @@ Em.I18n.translations = {
   '这被称为一个<b>本地软件库</b>',
   'installer.step2.javaHome.label' : '路径为64-bit JDK',
   'installer.step2.javaHome.tooltip.title' : 'JAVA_HOME',
-  'installer.step2.javaHome.tooltip.content' : '路径为64-bit JAVA_HOME. /usr/jdk/jdk1.6.0_31 是Ambari使用的默认值. 您可以将其覆盖到包含JDK的特定路径. <br/> 注意: 该路径必须在群集中的<b>所有</b>主机上有效.',
+  'installer.step2.javaHome.tooltip.content' : '路径为64-bit JAVA_HOME. /usr/jdk/jdk1.6.0_31 是Ambari使用的默认值. 您可以将其覆盖到包含JDK的特定路径. <br/> 注意: 该路径必须在集群中的<b>所有</b>主机上有效.',
   'installer.step2.javaHome.tooltip.placeholder' : '/usr/jdk/jdk1.6.0_31',
   'installer.step2.automaticInstall.tooltip.title':'自动注册',
-  'installer.step2.automaticInstall.tooltip.content':'在安装群集之前,Ambari将在每个主机上自动安装和注册Ambari Agent.',
+  'installer.step2.automaticInstall.tooltip.content':'在安装集群之前,Ambari将在每个主机上自动安装和注册Ambari Agent.',
   'installer.step2.useSsh.provide' : '提供你的',
   'installer.step2.useSsh.provide_id_rsa' : ' 自动注册主机',
   'installer.step2.useSsh.tooltip.title':'SSH私钥',
@@ -727,8 +727,8 @@ Em.I18n.translations = {
   'installer.step2.install.perform_on_hosts':'在主机上',
   'installer.step2.install.without_ssh':' 并且不要使用SSH',
   'installer.step2.manualInstall.tooltip.title':'手动注册',
-  'installer.step2.manualInstall.tooltip.content':'在每个主机上手动注册Ambari Agent,无需使用SSH,并且应该在继续群集安装之前执行.',
-  'installer.step2.manualInstall.tooltip.content_no_ssh':'在继续群集安装之前,应在每台主机上手动注册Ambari Agent.',
+  'installer.step2.manualInstall.tooltip.content':'在每个主机上手动注册Ambari Agent,无需使用SSH,并且应该在继续集群安装之前执行.',
+  'installer.step2.manualInstall.tooltip.content_no_ssh':'在继续集群安装之前,应在每台主机上手动注册Ambari Agent.',
   'installer.step2.manualInstall.popup.header':'在你继续前',
   'installer.step2.manualInstall.popup.body':'在您继续之前,您必须在要管理的每台主机上安装Ambari Agent.',
   'installer.step2.warning.popup.body':'<p>以下主机名不是有效的FQDN:</p><p> {0} </p><p>这可能会导致安装过程中的问题. 你想继续吗?</p>',
@@ -751,11 +751,11 @@ Em.I18n.translations = {
   'installer.step2.bootStrap.header':'设立Ambari代理',
   'installer.step2.skipHostChecks.label': '跳过主机检查',
   'installer.step2.skipHostChecks.popup.header': '警告',
-  'installer.step2.skipHostChecks.popup.body': '通过跳过主机检查，Ambari将不会检查并警告是否已识别出主机的任何问题，并且主机将按原样添加到群集中。',
+  'installer.step2.skipHostChecks.popup.body': '通过跳过主机检查，Ambari将不会检查并警告是否已识别出主机的任何问题，并且主机将按原样添加到集群中。',
 
   'installer.step3.header':'确认主机',
   'installer.step3.body':'注册你的主机.<br>' +
-  '请确认主机列表,并删除您不希望包含在群集中的任何主机.',
+  '请确认主机列表,并删除您不希望包含在集群中的任何主机.',
   'installer.step3.hostLog.popup.header':'注册日志{0}',
   'installer.step3.hosts.remove.popup.header':'删除主机',
   'installer.step3.hosts.remove.popup.body':'您确定要删除所选主机吗?',
@@ -855,7 +855,7 @@ Em.I18n.translations = {
   'installer.step3.hostWarningsPopup.moreHosts':'{0} 更多主机...<br>点击链接查看所有主机.',
   'installer.step3.hostWarningsPopup.allHosts':'主机列表',
   'installer.step3.hostWarningsPopup.rerunChecks':'重新运行检查',
-  'installer.step3.hostWarningsPopup.hostHasWarnings':'某些主机上的主机检查失败。强烈建议您在继续操作之前先解决这些问题，以防止群集安装可能出现重大问题。您确定要忽略这些警告并继续吗？',
+  'installer.step3.hostWarningsPopup.hostHasWarnings':'某些主机上的主机检查失败。强烈建议您在继续操作之前先解决这些问题，以防止集群安装可能出现重大问题。您确定要忽略这些警告并继续吗？',
   'installer.step3.hostWarningsPopup.hostHasWarnings.header':'主机检查警告',
   'installer.step3.warningsWindow.allHosts':'所有主机上的警告',
   'installer.step3.warningsWindow.warningsOn':'警告',
@@ -888,7 +888,7 @@ Em.I18n.translations = {
   'installer.step3.selectedHosts.popup.header':'所选主机',
 
   'installer.step4.header':'选择服务',
-  'installer.step4.body':'选择你要在你的群集上安装哪些服务.',
+  'installer.step4.body':'选择你要在你的集群上安装哪些服务.',
   'installer.step4.headerFS':'选择文件系统',
   'installer.step4.bodyFS':'选择你要在集群中安装哪个文件系统',
   'installer.step4.fsCheck.popup.header':'需要文件系统',
@@ -903,19 +903,19 @@ Em.I18n.translations = {
   'installer.step4.ambariMetricsCheck.popup.header': 'Ambari Metrics',
   'installer.step4.ambariMetricsCheck.popup.body':'Ambari Metrics从集群收集指标，并将其提供给Ambari。如果你不安装Ambari Metrics，Ambari将无法访问指标。确定不安装Ambari Metrics吗?',
   'installer.step4.ambariRangerInfraCheck.popup.header': 'Infra Solr',
-  'installer.step4.ambariRangerInfraCheck.popup.body':'为了让Ranger工作，Solr是必需的。选择要添加到群集的Infra Solr，或确保在“自定义服务”步骤中配置自己的Infra Solr。',
+  'installer.step4.ambariRangerInfraCheck.popup.body':'为了让Ranger工作，Solr是必需的。选择要添加到集群的Infra Solr，或确保在“自定义服务”步骤中配置自己的Infra Solr。',
   'installer.step4.ambariAtlasInfraCheck.popup.header': 'Infra Solr',
-  'installer.step4.ambariAtlasInfraCheck.popup.body':'为了使Atlas工作，需要Solr。选择要添加到群集的Infra Solr，或确保在“自定义服务”步骤中配置自己的Infra Solr。',
+  'installer.step4.ambariAtlasInfraCheck.popup.body':'为了使Atlas工作，需要Solr。选择要添加到集群的Infra Solr，或确保在“自定义服务”步骤中配置自己的Infra Solr。',
   'installer.step4.ambariAtlasHbaseCheck.popup.header': 'HBase',
-  'installer.step4.ambariAtlasHbaseCheck.popup.body':'为了使Atlas工作，需要HBase。选择要添加到群集的HBase，或确保在“自定义服务”步骤中配置自己的HBase。',
+  'installer.step4.ambariAtlasHbaseCheck.popup.body':'为了使Atlas工作，需要HBase。选择要添加到集群的HBase，或确保在“自定义服务”步骤中配置自己的HBase。',
   'installer.step4.ambariLogsearchCheck.popup.header': 'Ambari Logsearch',
   'installer.step4.ambariLogsearchCheck.popup.body':'由于未选择Ambari Infra，您必须提供自己的Solr才能使日志搜索工作。你确定要继续吗？',
   'installer.step4.smartSenseCheck.popup.header': 'Apache SmartSense',
-  'installer.step4.smartSenseCheck.popup.body':'SmartSense可安全地收集群集诊断信息，以便向您发送建议并自动进行分析，以便对故障排除支持案例进如果您选择不安装SmartSense，则不会收到任何建议，并且您需要手动收集配置和日志以排除故障支持案例。您确定要在没有SmartSense的情况下继续吗？',
+  'installer.step4.smartSenseCheck.popup.body':'SmartSense可安全地收集集群诊断信息，以便向您发送建议并自动进行分析，以便对故障排除支持案例进如果您选择不安装SmartSense，则不会收到任何建议，并且您需要手动收集配置和日志以排除故障支持案例。您确定要在没有SmartSense的情况下继续吗？',
   'installer.step4.rangerCheck.popup.header': 'Apache Ranger',
-  'installer.step4.rangerCheck.popup.body':'Apache Ranger为许多Hadoop生态系统服务提供了细粒度的授权和对访问尝试的审计。如果不安装Apache Ranger Service并启用Kerberos，则群集的安全性将会降低。你确定要没有它吗？',
+  'installer.step4.rangerCheck.popup.body':'Apache Ranger为许多Hadoop生态系统服务提供了细粒度的授权和对访问尝试的审计。如果不安装Apache Ranger Service并启用Kerberos，则集群的安全性将会降低。你确定要没有它吗？',
   'installer.step4.atlasCheck.popup.header': 'Apache Atlas',
-  'installer.step4.atlasCheck.popup.body':'Apache Atlas为许多hadoop生态系统服务提供强大的数据治理，沿袭和元数据管理。如果不安装Apache Atlas服务，则群集的数据治理功能将会减少。你确定要没有它吗？',
+  'installer.step4.atlasCheck.popup.body':'Apache Atlas为许多hadoop生态系统服务提供强大的数据治理，沿袭和元数据管理。如果不安装Apache Atlas服务，则集群的数据治理功能将会减少。你确定要没有它吗？',
 
   'installer.step4.rangerRequirements.popup.header': 'Ranger要求',
   'installer.step4.rangerRequirements.popup.body.requirements': '<ol><li>您必须运行一个<strong>MySQL/Oracle/Postgres/MSSQL/SQL Anywhere 服务</strong> 数据库实例,以运行Ranger.</li>' +
@@ -924,7 +924,7 @@ Em.I18n.translations = {
     '<li>在Ambari Server主机上执行以下命令.替换<code>database-type</code> 使用 <strong>mysql|oracle|postgres|mssql|sqlanywhere</strong> 和 <code>/jdbc/driver/path</code>根据相应的JDBC驱动程序的位置:' +
     '<pre>ambari-server setup --jdbc-db={database-type} --jdbc-driver={/jdbc/driver/path}</pre></li></ol>',
   'installer.step4.rangerRequirements.popup.body.confirmation': '我已经满足了上述所有要求.',
-  'installer.step4.sparkWarning.popup.body': 'Spark需要HDP 2.2.2或更高版本.尝试将Spark安装到HDP 2.2.0群集将失败.确认您正在使用HDP 2.2.2或更高版本的软件包.你确定要继续吗?',
+  'installer.step4.sparkWarning.popup.body': 'Spark需要HDP 2.2.2或更高版本.尝试将Spark安装到HDP 2.2.0集群将失败.确认您正在使用HDP 2.2.2或更高版本的软件包.你确定要继续吗?',
 
   'installer.step5.header':'指定主机',
   'installer.step5.reassign.header':'选择目标主机',
@@ -1234,8 +1234,8 @@ Em.I18n.translations = {
   'wizard.singleRequest.progressPage.notice.failed': '请单击“重试”链接以重试失败的请求。',
 
   'admin.advanced.caution':'本节仅供高级用户使用。<br/>请谨慎操作。',
-  'admin.advanced.button.uninstallIncludingData':'卸载包含所有数据的群集。',
-  'admin.advanced.button.uninstallKeepData':'卸载群集但保留数据。',
+  'admin.advanced.button.uninstallIncludingData':'卸载包含所有数据的集群。',
+  'admin.advanced.button.uninstallKeepData':'卸载集群但保留数据。',
 
   'admin.advanced.popup.header':'卸载集群',
 
@@ -1290,21 +1290,21 @@ Em.I18n.translations = {
   'admin.kerberos.wizard.step6.header': '停止服务',
   'admin.kerberos.wizard.step7.header': 'Kerberize集群',
   'admin.kerberos.wizard.step8.header': '启动和测试服务',
-  'admin.kerberos.wizard.step1.info.body': '欢迎来到Ambari安全向导. 使用此向导可以确保kerberos在您群集中的安全性. </br>让我们开始吧.',
+  'admin.kerberos.wizard.step1.info.body': '欢迎来到Ambari安全向导. 使用此向导可以确保kerberos在您集群中的安全性. </br>让我们开始吧.',
   'admin.kerberos.wizard.step1.alert.body': '注意: 此过程需要重新启动服务并集群停机. 同样, 根据您选择的选项, 可能需要安全管理员的支持. 请合理规划.',
   'admin.kerberos.wizard.step1.body.text': '您打算使用什么类型的KDC?',
   'admin.kerberos.wizard.step1.option.kdc': '现已拥有MIT KDC',
-  'admin.kerberos.wizard.step1.option.kdc.condition.1': 'Ambari服务器和群集主机具有对KDC和KDC管理主机的网络访问.',
+  'admin.kerberos.wizard.step1.option.kdc.condition.1': 'Ambari服务器和集群主机具有对KDC和KDC管理主机的网络访问.',
   'admin.kerberos.wizard.step1.option.kdc.condition.2': '现已拥有KDC行政凭证.',
   'admin.kerberos.wizard.step1.option.kdc.condition.3': '已在Ambari Server主机和集群中的所有主机上设置了Java加密扩展(JCE).',
   'admin.kerberos.wizard.step1.option.manual': '手动管理Kerberos主体和keytab',
-  'admin.kerberos.wizard.step1.option.manual.condition.1': '群集主机有权对KDC进行网络访问',
-  'admin.kerberos.wizard.step1.option.manual.condition.2': 'Kerberos客户端实用程序(如kinit)已安装在每个群集主机上',
+  'admin.kerberos.wizard.step1.option.manual.condition.1': '集群主机有权对KDC进行网络访问',
+  'admin.kerberos.wizard.step1.option.manual.condition.2': 'Kerberos客户端实用程序(如kinit)已安装在每个集群主机上',
   'admin.kerberos.wizard.step1.option.manual.condition.3': '已在Ambari Server主机和集群中的所有主机上设置了Java加密扩展(JCE)',
   'admin.kerberos.wizard.step1.option.manual.condition.4': '在完成此向导之前, 服务和Ambari主体将在KDC中手动创建',
-  'admin.kerberos.wizard.step1.option.manual.condition.5': '在完成此向导之前, 将手动创建服务, Ambari主体的keytabs并分发到群集主机',
+  'admin.kerberos.wizard.step1.option.manual.condition.5': '在完成此向导之前, 将手动创建服务, Ambari主体的keytabs并分发到集群主机',
   'admin.kerberos.wizard.step1.option.ad': '现已拥有Active Directory',
-  'admin.kerberos.wizard.step1.option.ad.condition.1': 'Ambari服务器和群集主机可以对域控制器进行网络访问.',
+  'admin.kerberos.wizard.step1.option.ad.condition.1': 'Ambari服务器和集群主机可以对域控制器进行网络访问.',
   'admin.kerberos.wizard.step1.option.ad.condition.2': '已配置Active Directory安全LDAP(LDAPS)连接.',
   'admin.kerberos.wizard.step1.option.ad.condition.3': 'Active Directory用于主体的用户容器已创建(例如 OU=Hadoop,OU=People,dc=apache,dc=org)',
   'admin.kerberos.wizard.step1.option.ad.condition.4': '授权的Active Directory管理凭据控制?°创建, 删除和管理用户账户?±通过之前提到过的用户容器.',
@@ -1320,11 +1320,11 @@ Em.I18n.translations = {
   'admin.kerberos.wizard.step3.task1.title': '测试Kerberos客户端',
   'admin.kerberos.wizard.step3.notice.inProgress': 'Kerberos客户端正在安装和测试之后请等待.',
   'admin.kerberos.wizard.step3.notice.completed': '已经安装并测试了Kerberos服务.',
-  'admin.kerberos.wizard.progressPage.notice.inProgress': '群集正在被梳理时请等待',
+  'admin.kerberos.wizard.progressPage.notice.inProgress': '集群正在被梳理时请等待',
   'admin.kerberos.wizard.step4.info.body': '为服务用户和hadoop服务组件配置主体名称和keytab位置.',
   'admin.kerberos.wizard.step5.info.body': '请在继续安装过程之前查看配置',
   'admin.kerberos.wizard.step5.moreInfoNonManual.body': '使用<b>下载CSV按钮</b>, 您可以下载一个csv文件其中包含由Ambari自动创建的主体和keytab列表.',
-  'admin.kerberos.wizard.step5.moreInfoManual.body': '重要提示: 使用<b>下载CSV</b>按钮获取Ambari在集群中启用Kerberos所需的<b>必需的</b>主体和keytab列表. <b>不要继续</b>直到手动创建并分发主体和keytab到群集主机.',
+  'admin.kerberos.wizard.step5.moreInfoManual.body': '重要提示: 使用<b>下载CSV</b>按钮获取Ambari在集群中启用Kerberos所需的<b>必需的</b>主体和keytab列表. <b>不要继续</b>直到手动创建并分发主体和keytab到集群主机.',
   'admin.kerberos.wizard.step5.kdc_type.label': 'KDC类型',
   'admin.kerberos.wizard.step5.kdc_hosts.label': 'KDC主机',
   'admin.kerberos.wizard.step5.realm.label': '领域名称',
@@ -1338,14 +1338,14 @@ Em.I18n.translations = {
   'admin.kerberos.wizard.step6.task1.title' : '删除ATS',
   'admin.kerberos.wizard.step6.notice.inProgress': '服务正在停止请等待.',
   'admin.kerberos.wizard.step6.notice.completed': '服务已成功停止.',
-  'admin.kerberos.wizard.step7.notice.inProgress': '群集正在被梳理时请等待.',
+  'admin.kerberos.wizard.step7.notice.inProgress': '集群正在被梳理时请等待.',
   'admin.kerberos.wizard.step7.notice.completed': '已经在集群上成功启用了Kerberos.',
   'admin.kerberos.wizard.step8.notice.inProgress': '服务正在开始和测试中请等待.',
   'admin.kerberos.wizard.step8.notice.completed': '服务已经通过kerberos环境成功测试.',
   'admin.kerberos.wizard.step8.notice.failed': '某些服务无法成功启动和执行测试. 单击重试以再次尝试或单击完成以关闭向导并手动修复.',
   'admin.kerberos.wizard.step8.task0.title' : '启动和测试服务',
 
-  'admin.kerberos.regenerate_keytabs.popup.body': '为群集中<strong>所有</strong>主机重新生成密钥表是一种中断操作, 并且要求重新启动所有组件. 或者, 可以为缺少的主机和组件<key>仅重新生成keytab</strong>, 并且此操作需要选择性地重新启动受影响的主机和服务.',
+  'admin.kerberos.regenerate_keytabs.popup.body': '为集群中<strong>所有</strong>主机重新生成密钥表是一种中断操作, 并且要求重新启动所有组件. 或者, 可以为缺少的主机和组件<key>仅重新生成keytab</strong>, 并且此操作需要选择性地重新启动受影响的主机和服务.',
   'admin.kerberos.regenerate_keytabs.checkbox.label': ' 只能为缺少的主机和组件重新生成密钥表',
   'admin.kerberos.regenerate_keytabs.popup.restart.body': '在keytab regerate完成后, 依赖他们的服务<strong>必须</strong>重新启动. 这可以自动完成, 也可以手动完成.',
   'admin.kerberos.regenerate_keytabs.checkbox.restart.label': 'keytab再生后自动重新启动组件',
@@ -1358,9 +1358,9 @@ Em.I18n.translations = {
   'admin.kerberos.disable.step1.task4.title': '开启服务',
   'admin.kerberos.disable.unkerberize.header': 'unkerberize集群',
   'admin.kerberos.disable.unkerberize.message': '在集群正在被取消镜像时不能退出向导',
-  'admin.kerberos.disable.inProgress': '群集正在被取消镜像时请等待',
+  'admin.kerberos.disable.inProgress': '集群正在被取消镜像时请等待',
   'admin.kerberos.disable.notice.completed': '服务已经成功测试, 没有kerberos环境.',
-  'admin.kerberos.wizard.step1.notice.inProgress': '群集正在被取消镜像时请等待',
+  'admin.kerberos.wizard.step1.notice.inProgress': '集群正在被取消镜像时请等待',
 
   'admin.manageJournalNode.label': '管理日志节点',
   'admin.manageJournalNode.warning': '管理日志节点向导需要启动所有NameNodes并定义Active / Standby状态',
@@ -1445,12 +1445,12 @@ Em.I18n.translations = {
   'admin.highAvailability.confirmRollbackHeader':'确认还原',
   'admin.highAvailability.confirmRollbackBody':'这将还原在HA向导中完成的所有操作',
   'admin.highAvailability.confirmManualRollbackBody':'您正在启用NameNode HA. 如果现在退出, 您必须按照手册说明重新回到非安装设置, 如Ambari用户指南<i>滚动返回NameNode HA</i>部分所述. 确定要退出向导?',
-  'admin.highAvailability.error.hostsNum':'您的群集中至少有3个主机才能启用NameNode HA.',
+  'admin.highAvailability.error.hostsNum':'您的集群中至少有3个主机才能启用NameNode HA.',
   'admin.highAvailability.error.namenodeStarted':'在启用NameNode HA之前, NameNode必须正在运行.',
   'admin.highAvailability.error.maintenanceMode':'为了启用NameNode HA, 所有服务和具有主组件的主机都需要退出维护模式.',
-  'admin.highAvailability.error.zooKeeperNum':'您的群集中至少有3个ZooKeeper服务器才能启用NameNode HA.',
-  'admin.rm_highAvailability.error.hostsNum':'您的群集中至少有3个主机才能启用ResourceManager HA.',
-  'admin.rm_highAvailability.error.zooKeeperNum':'您的群集中至少有3个ZooKeeper服务器才能启用ResourceManager HA.',
+  'admin.highAvailability.error.zooKeeperNum':'您的集群中至少有3个ZooKeeper服务器才能启用NameNode HA.',
+  'admin.rm_highAvailability.error.hostsNum':'您的集群中至少有3个主机才能启用ResourceManager HA.',
+  'admin.rm_highAvailability.error.zooKeeperNum':'您的集群中至少有3个ZooKeeper服务器才能启用ResourceManager HA.',
   'admin.rm_highAvailability.error.resourceManagerStarted':'在启用ResourceManager HA之前，必须运行ResourceManager。',
   'admin.rm_highAvailability.closePopup':'启用ResourceManager HA向导正在进行中。必须允许向导完成Ambari才能处于可用状态。如果选择退出，则必须按照手动说明完成或恢复启用ResourceManager HA，如Ambari用户指南中所述。您确定要退出向导吗？',
 
@@ -1459,7 +1459,7 @@ Em.I18n.translations = {
   'admin.highAvailability.wizard.progressPage.header':'部署',
   'admin.highAvailability.wizard.step1.header':'开始使用',
   'admin.highAvailability.wizard.step1.nameserviceid.tooltip.title':'Nameservice ID',
-  'admin.highAvailability.wizard.step1.nameserviceid.tooltip.content':'这将是NameNode HA群集的ID. 例如, 如果将Nameservice ID设置为<b>mycluster</b>, 则HDFS的逻辑URI将为<b>hdfs://mycluster</b>.',
+  'admin.highAvailability.wizard.step1.nameserviceid.tooltip.content':'这将是NameNode HA集群的ID. 例如, 如果将Nameservice ID设置为<b>mycluster</b>, 则HDFS的逻辑URI将为<b>hdfs://mycluster</b>.',
   'admin.highAvailability.wizard.step1.nameserviceid':'Nameservice ID',
   'admin.highAvailability.wizard.step1.nameserviceid.error':'必须由字母, 数字和连字符组成. 不能以连字符开头或结尾.',
   'admin.highAvailability.wizard.step2.header':'选择主机',
@@ -1598,7 +1598,7 @@ Em.I18n.translations = {
     '</div>',
   'admin.highAvailability.wizard.step2.body':'选择一个将运行附加NameNode的主机.<br/> 此外,' +
     ' 选择要运行JournalNodes的主机, 它以容错方式存储NameNode编辑日志.',
-  'admin.highAvailability.wizard.step1.body':'此向导将引导您在群集上启用NameNode HA.<br/>' +
+  'admin.highAvailability.wizard.step1.body':'此向导将引导您在集群上启用NameNode HA.<br/>' +
     '一旦启用,除了您的Active NameNode 您将运行一个Standby NameNode.<br/>' +
     '这允许自动执行故障切换的Active-Standby NameNode配置.<br/><br/>' +
     '启用HA的过程涉及到的组合 <b>自动化步骤</b> (这将由向导处理)  ' +
@@ -1611,7 +1611,7 @@ Em.I18n.translations = {
 
   'admin.rm_highAvailability.wizard.header': '启用ResourceManager HA向导',
   'admin.rm_highAvailability.wizard.step1.header': '开始使用',
-  'admin.rm_highAvailability.wizard.step1.body':'此向导将引导您在群集上启用ResourceManager HA.<br/>' +
+  'admin.rm_highAvailability.wizard.step1.body':'此向导将引导您在集群上启用ResourceManager HA.<br/>' +
       '启用后, 除了Active ResourceManager之外,还将运行Standby ResourceManager.<br/>' +
       '这允许自动执行故障切换的Active-Standby ResourceManager配置.<br/><br/>' +
       '<b>您应该计划集群维护窗口,并准备启用ResourceManager HA时的集群停机时间.</b>',
@@ -1637,10 +1637,10 @@ Em.I18n.translations = {
 
   'admin.ra_highAvailability.wizard.header': '启用Ranger管理员HA向导',
   'admin.ra_highAvailability.wizard.step1.header': '开始使用',
-  'admin.ra_highAvailability.wizard.step1.body': '此向导将引导您在群集上启用Ranger Admin HA.<br/>' +
+  'admin.ra_highAvailability.wizard.step1.body': '此向导将引导您在集群上启用Ranger Admin HA.<br/>' +
   '一旦启用, 除了您的Active Ranger管理员之外,您还将运行一个Standby Ranger管理员.<br/>' +
   '这允许Active-Standby Ranger管理员配置自动执行故障切换.<br/><br/>' +
-  '<b>您应该计划集群维护窗口并准备启用Ranger Admin HA时的群集停机时间.</b><br/><br/>' +
+  '<b>您应该计划集群维护窗口并准备启用Ranger Admin HA时的集群停机时间.</b><br/><br/>' +
   '请设置负载平衡器并提供要使用的URL,在继续之前,请确保正确设置负载平衡器.' +
   '<br/><br/><div class="alert">确保Ranger管理员和负载均衡器位于不同的主机上.</div>',
   'admin.ra_highAvailability.wizard.step1.load_balancer_url': '加载平衡器的URL',
@@ -1715,16 +1715,16 @@ Em.I18n.translations = {
   'admin.security.enable.popup.body': '我们将引导您完成添加安全向导',
   'admin.security.enable.popup.header': '增加安全性',
   'admin.security.disable.popup.header': '删除安全性',
-  'admin.security.disable.popup.body': '您即将禁用群集上的Kerberos. 这将停止集群中的所有服务,并删除Kerberos配置. <strong>您确定要继续禁用Kerberos?</strong>',
+  'admin.security.disable.popup.body': '您即将禁用集群上的Kerberos. 这将停止集群中的所有服务,并删除Kerberos配置. <strong>您确定要继续禁用Kerberos?</strong>',
   'admin.security.step1.header': '开始使用',
   'admin.security.step2.header': '配置服务',
   'admin.security.step3.header': '创建Principals 和 Keytabs',
   'admin.security.step4.header': '保存并应用配置',
-  'admin.security.step1.body.header': '重要提示: 在配置Ambari以管理启用了Kerberos的群集之前, ' +
-    '您必须在群集上执行以下手动步骤. 确保记录keytab文件的位置 ' +
+  'admin.security.step1.body.header': '重要提示: 在配置Ambari以管理启用了Kerberos的集群之前, ' +
+    '您必须在集群上执行以下手动步骤. 确保记录keytab文件的位置 ' +
     '为每个主机和每个Hadoop服务的主体. 为了使用向导, 需要这些信息.',
   'admin.security.step1.body.instruction1': '安装, 配置并启动您的Kerberos KDC',
-  'admin.security.step1.body.instruction2': '在群集中的每个主机上安装和配置Kerberos客户端',
+  'admin.security.step1.body.instruction2': '在集群中的每个主机上安装和配置Kerberos客户端',
   'admin.security.step1.body.instruction3': '为Hadoop服务和主机创建Kerberos主体',
   'admin.security.step1.body.instruction4': '为每个主体生成密钥表并在适当的主机上放置',
   'admin.security.step1.body.instruction5': '<b>应用程序时间线服务器</b> YARN服务的组成部分将会 <span class="text-danger"><b>删除</b></span>作为在HDP堆栈版本中实现安全性的一部分',
@@ -1735,20 +1735,20 @@ Em.I18n.translations = {
   'admin.security.step3.table.principal': 'Principal',
   'admin.security.step3.table.keytab': 'Keytab',
   'admin.security.step3.downloadCSV': '下载 CSV',
-  'admin.security.step4.body.header': '将Kerberos安全性应用于群集',
-  'admin.security.step4.body.success.header' : '您的群集上已启用基于Kerberos的安全性. 请等待服务以安全模式启动.',
-  'admin.security.step4.body.failure.header' : '无法在群集上启用基于Kerberos的安全性. 您的群集将继续以非安全模式运行.',
+  'admin.security.step4.body.header': '将Kerberos安全性应用于集群',
+  'admin.security.step4.body.success.header' : '您的集群上已启用基于Kerberos的安全性. 请等待服务以安全模式启动.',
+  'admin.security.step4.body.failure.header' : '无法在集群上启用基于Kerberos的安全性. 您的集群将继续以非安全模式运行.',
   'admin.security.step4.save.configuration.note':'此配置由启用/禁用安全性向导创建',
-  'admin.security.apply.configuration.error' : '无法将安全配置应用于群集. 请导航到"配置服务"步骤,并确保所有服务都配置了适当的值.',
-  'admin.security.disable.body.header' : '禁用群集上的kerberos安全性',
-  'admin.security.disable.body.success.header': '您的群集上已禁用基于Kerberos的安全性. 服务在非安全模式下启动时请等待.',
-  'admin.security.disable.body.failure.header': '无法在群集上禁用基于Kerberos的安全性. 您的群集将以安全模式继续运行.',
-  'admin.security.disable.onClose': '您正在对群集上的安全性进行禁用. ' +
+  'admin.security.apply.configuration.error' : '无法将安全配置应用于集群. 请导航到"配置服务"步骤,并确保所有服务都配置了适当的值.',
+  'admin.security.disable.body.header' : '禁用集群上的kerberos安全性',
+  'admin.security.disable.body.success.header': '您的集群上已禁用基于Kerberos的安全性. 服务在非安全模式下启动时请等待.',
+  'admin.security.disable.body.failure.header': '无法在集群上禁用基于Kerberos的安全性. 您的集群将以安全模式继续运行.',
+  'admin.security.disable.onClose': '您正在对集群上的安全性进行禁用. ' +
     '你确定你要退出吗?',
   'admin.removeSecurity.header': '禁用安全性',
   'admin.security.applying.config.header': '应用配置',
   'admin.security.applying.config.body':'在应用配置时,不能退出向导',
-  'admin.security.status.error' : '从Ambari服务器检索群集安全状态时出错',
+  'admin.security.status.error' : '从Ambari服务器检索集群安全状态时出错',
   'admin.users.ldapAuthUsed':'正在使用LDAP验证来验证用户',
   'admin.users.delete.yourself.message':'你不能删除自己',
   'admin.users.delete.yourself.header':'删除警告',
@@ -1847,7 +1847,7 @@ Em.I18n.translations = {
   'admin.stackVersions.version.errors.outOfSync.reinstall.title': '确认重新安装',
   'admin.stackVersions.version.errors.outOfSync.remove.title': '确认移除',
   
-  'admin.stackVersions.version.service.notUpgradable': "此存储库中包含的此服务的版本已安装在群集中。",
+  'admin.stackVersions.version.service.notUpgradable': "此存储库中包含的此服务的版本已安装在集群中。",
   'admin.stackVersions.version.service.notSupported': "当前版本的堆栈不支持此服务。",
 
   'admin.stackVersions.version.upgrade.upgradeOptions.header': "升级选项",
@@ -1946,8 +1946,8 @@ Em.I18n.translations = {
   'admin.stackUpgrade.doThisLater': "做这个以后",
   'admin.stackUpgrade.pauseUpgrade': "暂停升级",
   'admin.stackUpgrade.pauseDowngrade': "暂停降级",
-  'admin.stackUpgrade.pauseUpgrade.warning': "您即将暂停{0}.您可以返回继续{0}并稍后确定,但升级暂停时,您<strong style ='color：red;'> 不应该 </strong>执行任何群集更改.例如:" +
-  "<ul><li>不要在群集上添加/删除主机</li>" +
+  'admin.stackUpgrade.pauseUpgrade.warning': "您即将暂停{0}.您可以返回继续{0}并稍后确定,但升级暂停时,您<strong style ='color：red;'> 不应该 </strong>执行任何集群更改.例如:" +
+  "<ul><li>不要在集群上添加/删除主机</li>" +
   "<li>不要在集群上添加/删除服务</li>" +
   "<li>不要启用/禁用Kerberos</li>" +
   "<li>不要启用/禁用HA</li>" +
@@ -2106,7 +2106,7 @@ Em.I18n.translations = {
 
   'services.service.delete.popup.header': '删除服务',
   'services.service.delete.popup.kerberos': 'Kerberos服务<i>无法删除</i>，因为Kerberos是' +
-  '当前已启用,并被群集使用.Kerberos服务只能通过禁用Kerberos' +
+  '当前已启用,并被集群使用.Kerberos服务只能通过禁用Kerberos' +
   '来删除,可以通过浏览到<b>管理 > Kerberos</b>并选择<b>禁用 Kerberos</b>来找到.',
   'services.service.delete.popup.ranger': '在删除<b> Ranger </b>之前,您必须禁用插件.',
   'services.service.delete.configVersionNote': '删除{0}后更新配置',
@@ -2405,13 +2405,13 @@ Em.I18n.translations = {
   'services.service.config_groups.switchGroupTextFull':'切换到"{0}"主机配置组',
   'services.service.config_groups.switchGroupTextShort':'切换到"{0}"',
   'services.reassign.closePopup':'移动{0}向导正在进行中. 您必须允许向导完成Ambari处于可用状态. 如果您选择退出，您必须按照"Ambari用户指南"中的说明手动完成或还原移动{0}向导. 你确定要退出向导吗？',
-  'services.reassign.error.fewHosts':'您的群集中至少必须有2个主机才能运行"移动向导".',
+  'services.reassign.error.fewHosts':'您的集群中至少必须有2个主机才能运行"移动向导".',
 
   'services.reassign.step1.header':'开始使用',
   'services.reassign.step1.message1': '这个向导会引导你移动 {0}.<br/>',
   'services.reassign.step1.message2': '重新分配{0}的过程涉及到 <b>自动化步骤</b> (这将由向导处理) 和 ' +
       '<b>手动步骤</b> (您必须按照向导的指示顺序执行).<br/><br/>',
-  'services.reassign.step1.message3': '<br/><b>所有必需的服务将作为向导的一部分重新启动. 您应该计划一个群集维护窗口并进行准备' +
+  'services.reassign.step1.message3': '<br/><b>所有必需的服务将作为向导的一部分重新启动. 您应该计划一个集群维护窗口并进行准备' +
     '用于移动{0}时的集群停机 .</b>',
 
   'services.reassign.step2.header':'分配主组件',
@@ -2825,7 +2825,7 @@ Em.I18n.translations = {
   'host.host.componentFilter.client':'客户端组件',
   'hosts.host.deleteComponent.popup.msg1':'你确定你要删除 {0}?',
   'hosts.host.deleteComponent.popup.deleteJournalNodeMsg': '您即将打开<i>管理日记帐节点向导</i>. 你确定?',
-  'hosts.host.deleteComponent.popup.warning':'<b>警告!</b> 删除最后一个 <i>{0}</i> 组件中的组件?</br>删除群集中的最后一个组件可能导致永久丢失服务数据.',
+  'hosts.host.deleteComponent.popup.warning':'<b>警告!</b> 删除最后一个 <i>{0}</i> 组件中的组件?</br>删除集群中的最后一个组件可能导致永久丢失服务数据.',
   'hosts.host.deleteComponent.popup.confirm':'确认删除',
   'hosts.host.installComponent.popup.confirm':'确认安装',
   'hosts.host.installComponent.msg':'你确定要安装 {0}?',
@@ -2835,9 +2835,9 @@ Em.I18n.translations = {
   'host.host.addComponent.popup.dependedComponents.header': '组件依赖',
   'host.host.addComponent.popup.clients.dependedComponents.body': '{0} 要求 {1} 与他们一起安装在同一台主机上. 请先添加它们',
   'hosts.host.zooKeeper.configs.save.note': '此配置由安装在主机上安装/删除zookeeper组件时创建',
-  'hosts.host.addComponent.securityNote':'您正以安全模式运行群集.  您必须在 {0} 之前设置 {1} 的密钥表然后再继续. 否则, 组件将无法正常启动.',
+  'hosts.host.addComponent.securityNote':'您正以安全模式运行集群.  您必须在 {0} 之前设置 {1} 的密钥表然后再继续. 否则, 组件将无法正常启动.',
   'hosts.host.addComponent.popup.confirm':'确认添加',
-  'hosts.host.manualKerberosWarning': '<strong>由于Kerberos已经手动安装在群集上，所以当此操作完成后，您必须创建/分发主体和keytab.</strong>',
+  'hosts.host.manualKerberosWarning': '<strong>由于Kerberos已经手动安装在集群上，所以当此操作完成后，您必须创建/分发主体和keytab.</strong>',
   'hosts.host.deleteComponent.popup.deleteNimbus':'删除 <i>Storm Nimbus</i> 将重新配置 <b>nimbus.seeds</b>, <b>topology.min.replication.count</b>, <b>topology.max.replication.wait.time.sec</b> 属性如果被定义.',
   'hosts.host.storm.configs.save.note': '此配置由安装在主机上安装/删除风暴组件时创建',
   'hosts.host.datanode.decommission':'Decommission DataNode',
@@ -2960,7 +2960,7 @@ Em.I18n.translations = {
 
   'dashboard.clusterMetrics.cpu':'CPU使用率',
   'dashboard.clusterMetrics.cpu.displayNames.idle':'空闲',
-  'dashboard.clusterMetrics.load':'群集负载',
+  'dashboard.clusterMetrics.load':'集群负载',
   'dashboard.clusterMetrics.memory':'内存使用情况',
   'dashboard.clusterMetrics.network':'网络使用',
 
@@ -3085,7 +3085,7 @@ Em.I18n.translations = {
   '即使DataNode进程已启动，如果DataNode未按预期与NameNode通信，NameNode可能会将状态视为已死。' +
   '这可能是由于过多的垃圾收集导致的网络问题或挂起的DataNode进程等情况。',
   'dashboard.services.hdfs.datanode.status.tooltip.decommission': '这是从NameNode报告的当前退役的DataNode数。' +
-  '如果群集中没有足够的其他DataNode来基于dfs.replication属性（通常为3）创建配置数量的块副本，则DataNode可能会停滞在退役状态，直到NameNode可以使用更多DataNode。',
+  '如果集群中没有足够的其他DataNode来基于dfs.replication属性（通常为3）创建配置数量的块副本，则DataNode可能会停滞在退役状态，直到NameNode可以使用更多DataNode。',
 
   'dashboard.services.yarn.summary':'{1}个节点中有{0}个存活',
   'dashboard.services.yarn.resourceManager':'ResourceManager',
@@ -3438,7 +3438,7 @@ Em.I18n.translations = {
   'admin.addHawqStandby.wizard.step1.body':'此向导将引导您完成添加HAWQ Standby的过程 ' +
       'Master作为当前HAWQ主控主机的备份. 添加HAWQ Standby Master后，它将作为<i>热备份</i> ' +
       '在主HAWQ主站主机变为不可操作的情况下可能会被激活.<br/><br/>' +
-      '<b>此过程重新启动HAWQ服务. 在计划的群集维护窗口中执行此过程.</b>',
+      '<b>此过程重新启动HAWQ服务. 在计划的集群维护窗口中执行此过程.</b>',
   'admin.addHawqStandby.wizard.step2.header': '选择主机',
   'admin.addHawqStandby.wizard.step2.body': '选择将运行HAWQ Standby Master的主机',
   'admin.addHawqStandby.wizard.step3.header': '检查',
@@ -3471,7 +3471,7 @@ Em.I18n.translations = {
       '在HAWQ Standby Master主机故障或维护的情况下. 删除HAWQ Standby Master后，现有HAWQ Master将以独立模式运行，无需备份.' +
       '<br/><br/><b>此过程停止并重新启动HAWQ服务. 在计划的集群期间执行此过程 ' +
       '维护窗口，仅当HAWQ主站正常工作时.</b>' +
-      '<br/><br/>完成此向导后，HAWQ群集将不再具有待机主站. ' +
+      '<br/><br/>完成此向导后，HAWQ集群将不再具有待机主站. ' +
       '作为最佳做法，请使用“添加HAWQ待机主服务器”服务操作为集群配置新的HAWQ待机主服务器.',
   'admin.removeHawqStandby.wizard.step2.header': '检查',
   'admin.removeHawqStandby.wizard.step2.hawqStandby': '<b>当前HAWQ Standby:</b>',
@@ -3501,7 +3501,7 @@ Em.I18n.translations = {
       '它被推广为新的HAWQ Master和以前的HAWQ Master配置 ' +
       '已从集群中删除.<br/> <br/> <b>此过程重新启动HAWQ服务. ' +
       '在计划的集群维护窗口中执行此过程，除非当前 ' +
-      'HAWQ 主机无法正常工作.</b> <br/>在完成此向导后，HAWQ群集 ' +
+      'HAWQ 主机无法正常工作.</b> <br/>在完成此向导后，HAWQ集群 ' +
       '将不再有Standby 主机. 作为最佳实践，使用 “Add HAWQ Standby Master” ' +
       '服务操作为集群配置新的HAWQStandby 主服务器.',
   'admin.activateHawqStandby.wizard.step2.header': '检查',
